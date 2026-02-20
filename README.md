@@ -126,18 +126,6 @@ Drag & Drop	@hello-pangea/dnd
 Icons	Lucide React
 Backend & Auth	Supabase
 Deployment	Vercel
-🔮 פיתוחים עתידיים
-
-היררכיית הרשאות מתקדמת (חייל / קצין / מפקד)
-
-אלגוריתם איזון עומסים אוטומטי
-
-שליחת SMS
-
-ייצוא סידור משמרות ל-PDF
-
-Dashboard ניהולי מתקדם
-
 👨‍💻 פותח על ידי
 
 ליאור רימון – 2026
