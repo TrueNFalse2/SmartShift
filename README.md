@@ -1,76 +1,153 @@
-🛡️ ShiftGuard PRO - Smart Shift Management System
+🛡️ ShiftGuard PRO
+Smart Shift Management System for Command Centers
 
-ShiftGuard PRO היא מערכת חכמה לניהול משמרות סגל (חמ"ל), המאפשרת שיבוץ קל בגרירה (Drag & Drop), ניהול אילוצים בזמן אמת, הפקת דוחות וסטטיסטיקות, ושליחת סידור עבודה ישירות ל-WhatsApp.
 
-🌍 אתר חי: smart-shift-ruddy.vercel.app
-✨ תכונות עיקריות (Features)
 
-    לוח חמ"ל אינטראקטיבי: שיבוץ קצינים וסמב"צים באמצעות גרירה (Drag & Drop).
 
-    חסימת אילוצים חכמה: המערכת מונעת שיבוץ חייל ביום שבו הזין אילוץ (מחלה, לימודים וכו').
 
-    ניהול פרופיל: העלאת תמונת פרופיל ושימוש בשם מותאם אישית לכל משתמש.
 
-    מערכת דוחות: גרפים וסטטיסטיקות של התפלגות המשמרות בין חברי הסגל.
 
-    WhatsApp Integration: שליחת סידור המשמרות הכולל תאריך, שעה ותפקיד בלחיצת כפתור.
 
-    אבטחה מלאה: אימות משתמשים דרך Supabase, כולל שחזור סיסמה במייל.
+ShiftGuard PRO היא מערכת חכמה לניהול משמרות סגל חמ"ל, המאפשרת שיבוץ קל ואינטואיטיבי, ניהול אילוצים בזמן אמת, הפקת דוחות, ושליחת סידור עבודה ישירות ל-WhatsApp.
 
-    תמיכה דו-לשונית: מעבר מהיר בין עברית לאנגלית.
+🌍 Live Demo:
+https://smart-shift-ruddy.vercel.app
 
-🚀 הוראות התקנה (Installation)
+✨ Features
+🧩 Interactive Command Board
 
-כדי להריץ את הפרויקט אצלך במחשב, בצע את השלבים הבאים:
-1. שיכפול ה-Repository
-Bash
+שיבוץ קצינים וסמב"צים באמצעות Drag & Drop
 
+תצוגת משמרות שבועית ברורה ואינטואיטיבית
+
+🚫 Smart Constraint Blocking
+
+מניעת שיבוץ אוטומטית במקרה של אילוץ (מחלה / לימודים / חופשה)
+
+👤 Profile Management
+
+העלאת תמונת פרופיל
+
+שם מותאם אישית
+
+ניהול הרשאות לפי תפקיד (User / Shift Manager)
+
+📊 Reports & Analytics
+
+גרפים סטטיסטיים של התפלגות משמרות
+
+מעקב עומס לפי משתמש
+
+📲 WhatsApp Integration
+
+שליחת סידור משמרות בלחיצה
+
+כולל תאריך, שעה ותפקיד
+
+🔐 Secure Authentication
+
+אימות משתמשים דרך Supabase
+
+שחזור סיסמה במייל
+
+Session Management
+
+🌍 Bilingual Support
+
+מעבר מהיר בין עברית ואנגלית
+
+🚀 Installation
+1️⃣ Clone Repository
 git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
 cd YOUR_REPO_NAME
+2️⃣ Install Dependencies
 
-2. התקנת חבילות (Dependencies)
-
-וודא שמותקן אצלך Node.js, ואז הרץ:
-Bash
+וודא שמותקן Node.js:
 
 npm install
+3️⃣ Environment Variables
 
-3. הגדרת משתני סביבה (Environment Variables)
+צור קובץ בשם:
 
-צור קובץ בשם .env.local בתיקייה הראשית והוסף את המפתחות של ה-Supabase שלך:
-קטע קוד
+.env.local
+
+והוסף:
 
 VITE_SUPABASE_URL=your_supabase_url
 VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-
-4. הרצת האפליקציה
-Bash
-
+4️⃣ Run Development Server
 npm run dev
 
-האפליקציה תהיה זמינה בכתובת: http://localhost:5173
-⚙️ הגדרות Supabase נדרשות
+האפליקציה תעלה בכתובת:
 
-כדי שהמערכת תעבוד בצורה מלאה, יש להגדיר ב-Supabase:
+http://localhost:5173
+⚙️ Supabase Configuration
 
-    Storage: צור Bucket בשם AVATARS והגדר לו Policy של Public או הרשאות כתיבה למשתמשים מחוברים.
+כדי שהמערכת תפעל באופן מלא:
 
-    Authentication: * תחת URL Configuration, הגדר את ה-Site URL לכתובת ה-Vercel שלך.
+🗂 Storage
 
-        הוסף Redirect URL: https://smart-shift-ruddy.vercel.app/#type=recovery.
+צור Bucket בשם: AVATARS
 
-    Database: וודא שקיימות הטבלאות personnel, shifts ו-availability עם השדות המתאימים.
+הגדר Policy:
 
-🛠️ טכנולוגיות (Tech Stack)
+Public read
 
-    Frontend: React.js, Tailwind CSS
+Authenticated upload
 
-    Icons: Lucide-React
+🔐 Authentication
 
-    Drag & Drop: @hello-pangea/dnd
+Site URL → כתובת ה-Vercel שלך
 
-    Backend & Auth: Supabase
+Redirect URL:
 
-    Deployment: Vercel
+https://smart-shift-ruddy.vercel.app/#type=recovery
+🗄 Database
 
-פותח על ידי ליאור - 2026
+ודא שקיימות הטבלאות:
+
+personnel
+
+shifts
+
+availability
+
+כולל השדות:
+
+id
+
+role
+
+name
+
+shift_date
+
+shift_type
+
+constraint_type
+
+created_at
+
+🛠 Tech Stack
+Layer	Technology
+Frontend	React.js + Tailwind CSS
+Drag & Drop	@hello-pangea/dnd
+Icons	Lucide React
+Backend/Auth	Supabase
+Deployment	Vercel
+🧠 Future Improvements
+
+Role-based permission hierarchy (Officer / Soldier)
+
+Automated shift balancing algorithm
+
+SMS Notifications
+
+PDF shift export
+
+Admin dashboard analytics
+
+👨‍💻 Author
+
+Developed by Lior Rimon – 2026
+Management Information Systems | Cyber & System Architecture
