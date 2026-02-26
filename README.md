@@ -1,132 +1,56 @@
-🛡️ ShiftGuard PRO
-מערכת חכמה לניהול משמרות (חמ״ל)
+# 🛡️ ShiftGuard PRO  
+### Smart Command & Control Shift Management System
 
-ShiftGuard PRO היא מערכת חכמה לניהול משמרות סגל חמ״ל, המאפשרת שיבוץ קל ונוח באמצעות גרירה (Drag & Drop), ניהול אילוצים בזמן אמת, הפקת דוחות וסטטיסטיקות, ושליחת סידור עבודה ישירות ל-WhatsApp.
+**ShiftGuard PRO** is an intelligent web-based system designed to manage Command & Control (C&C / NOC / SOC) personnel shifts in dynamic and high-responsibility environments.  
+The platform enables fast scheduling using **Drag & Drop**, real-time constraint management, workload analytics, and one-click shift distribution via WhatsApp.
 
-🌍 אתר חי:
+🌍 **Live Demo:**  
 https://smart-shift-ruddy.vercel.app
 
-✨ תכונות עיקריות
-🧩 לוח חמ״ל אינטראקטיבי
+---
 
-שיבוץ קצינים וסמב״צים באמצעות Drag & Drop
+## ✨ Key Features
 
-תצוגת משמרות שבועית ברורה ונוחה
+### 🧩 Interactive Operations Board
+- Assign officers and operators using **Drag & Drop**
+- Clear and intuitive weekly shift view
+- Role-based separation (Officer / Operator)
 
-🚫 ניהול אילוצים חכם
+### 🚫 Smart Availability & Constraints Management
+- Automatic blocking of assignments on unavailable days  
+  (illness, studies, vacation, reserve duty, etc.)
+- Prevents scheduling conflicts and human error
 
-חסימת שיבוץ אוטומטית בימים עם אילוץ
-(מחלה, לימודים, חופשה וכו׳)
+### 👤 User Profile Management
+- Profile image upload
+- Custom display name
+- Role-based permissions  
+  (Regular User / Shift Manager)
 
-👤 ניהול פרופיל משתמש
+### 📊 Reports & Statistics
+- Shift distribution charts
+- Workload balance across personnel
+- Improved transparency and fairness
 
-העלאת תמונת פרופיל
+### 📲 WhatsApp Integration
+- One-click shift schedule sharing
+- Includes date, time, and role
+- Ready for immediate team distribution
 
-שם מותאם אישית
+### 🔐 Security & Authentication
+- Secure user authentication via Supabase
+- Password recovery via email
+- Secure session management
 
-ניהול הרשאות לפי תפקיד (משתמש / מנהל משמרת)
+### 🌍 Bilingual Support
+- Instant language switching between **Hebrew & English**
+- Full RTL / LTR support
 
-📊 דוחות וסטטיסטיקות
+---
 
-גרפים להתפלגות משמרות
+## 🚀 Installation Guide (Local Development)
 
-מעקב עומסים בין חברי הסגל
-
-📲 אינטגרציית WhatsApp
-
-שליחת סידור משמרות בלחיצת כפתור
-
-כולל תאריך, שעה ותפקיד
-
-🔐 אבטחה ואימות
-
-אימות משתמשים דרך Supabase
-
-שחזור סיסמה באמצעות מייל
-
-ניהול סשן מאובטח
-
-🌍 תמיכה דו־לשונית
-
-מעבר מהיר בין עברית לאנגלית
-
-🚀 הוראות התקנה
-1️⃣ שכפול הפרויקט
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
-2️⃣ התקנת חבילות
-
-ודא שמותקן Node.js, ואז הרץ:
-
-npm install
-3️⃣ הגדרת משתני סביבה
-
-צור קובץ בשם:
-
-.env.local
-
-והוסף:
-
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-4️⃣ הרצת האפליקציה
-npm run dev
-
-האפליקציה תהיה זמינה בכתובת:
-
-http://localhost:5173
-⚙️ הגדרות נדרשות ב-Supabase
-🗂 Storage
-
-צור Bucket בשם: AVATARS
-
-הגדר Policy:
-
-קריאה ציבורית
-
-כתיבה למשתמשים מחוברים
-
-🔐 Authentication
-
-הגדר Site URL לכתובת ה-Vercel שלך
-
-הוסף Redirect URL:
-
-https://smart-shift-ruddy.vercel.app/#type=recovery
-🗄 Database
-
-ודא שקיימות הטבלאות הבאות:
-
-personnel
-
-shifts
-
-availability
-
-כולל שדות לדוגמה:
-
-id
-
-name
-
-role
-
-shift_date
-
-shift_type
-
-constraint_type
-
-created_at
-
-🛠 טכנולוגיות
-שכבה	טכנולוגיה
-Frontend	React.js + Tailwind CSS
-Drag & Drop	@hello-pangea/dnd
-Icons	Lucide React
-Backend & Auth	Supabase
-Deployment	Vercel
-👨‍💻 פותח על ידי
-
-ליאור רימון – 2026
-ניהול מערכות מידע | סייבר וארכיטקטורת מערכות
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/TrueNFalse2/SmartShift.git
+cd SmartShift
