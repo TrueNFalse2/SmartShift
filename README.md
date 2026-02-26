@@ -54,6 +54,7 @@ https://smart-shift-ruddy.vercel.app
 ```bash
 git clone https://github.com/TrueNFalse2/SmartShift.git
 cd SmartShift
+
 2️⃣ Install Dependencies
 
 Make sure Node.js (v18+) is installed, then run:
