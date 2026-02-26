@@ -54,3 +54,25 @@ https://smart-shift-ruddy.vercel.app
 ```bash
 git clone https://github.com/TrueNFalse2/SmartShift.git
 cd SmartShift
+2️⃣ Install Dependencies
+
+Make sure Node.js (v18+) is installed, then run:
+
+npm install
+3️⃣ Environment Variables
+
+Create a file named:
+
+.env.local
+
+Add the following variables:
+
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+4️⃣ Run the Application
+npm run dev
+
+The application will be available at:
+
+http://localhost:5173
