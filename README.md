@@ -52,6 +52,7 @@ https://smart-shift-ruddy.vercel.app
 
 ### 1️⃣ Clone the Repository
 ```bash
+
 git clone https://github.com/TrueNFalse2/SmartShift.git
 cd SmartShift
 
