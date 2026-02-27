@@ -46,6 +46,11 @@ https://smart-shift-ruddy.vercel.app
 - Instant language switching between **Hebrew & English**
 - Full RTL / LTR support
 
+### 📸 Screenshots
+- 
+-
+
+
 ---
 
 ## 🚀 Installation Guide (Local Development)
