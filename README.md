@@ -47,8 +47,24 @@ https://smart-shift-ruddy.vercel.app
 - Full RTL / LTR support
 
 ### 📸 Screenshots
-- 
--
+
+<p align="center">
+  <img src="screenshots/IMG_7838.png" width="250"/>
+  <img src="screenshots/IMG_7839.png" width="250"/>
+  <img src="screenshots/IMG_7840.png" width="250"/>
+</p>
+
+<p align="center">
+  <img src="screenshots/IMG_7841.png" width="250"/>
+  <img src="screenshots/IMG_7842.png" width="250"/>
+  <img src="screenshots/IMG_7843.png" width="250"/>
+</p>
+
+<p align="center">
+  <img src="screenshots/IMG_7844.png" width="250"/>
+  <img src="screenshots/IMG_7845.png" width="250"/>
+  <img src="screenshots/IMG_7846.png" width="250"/>
+</p>
 
 
 ---
