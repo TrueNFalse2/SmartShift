@@ -1,7 +1,7 @@
 # 🛡️ ShiftGuard PRO  
 ### Smart Command & Control Shift Management System
 
-**ShiftGuard PRO** is an intelligent web-based system designed to manage Command & Control (C&C / NOC / SOC) personnel shifts in dynamic and high-responsibility environments.  
+**ShiftGuard PRO** is an intelligent web-based system designed to manage personnel shifts in dynamic and high-responsibility environments.  
 The platform enables fast scheduling using **Drag & Drop**, real-time constraint management, workload analytics, and one-click shift distribution via WhatsApp.
 
 🌍 **Live Demo:**  
